@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        String cmd = "CLASSPATH=" + this.getPackageCodePath() + " /system/bin/app_process /system/bin net.rinsuki.apps.android.remotetouchagent.Agent $0g $1";
+        String cmd = "CLASSPATH=" + this.getPackageCodePath() + " /system/bin/app_process /system/bin net.rinsuki.apps.android.remotetouchagent.Agent $0 $1";
         System.out.println(cmd);
         try {
             File file = new File("/sdcard/remotetouchagent");
